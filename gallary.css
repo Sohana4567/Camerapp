@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin:0;
+    
+}
+
+.back{
+    width:5rem;
+    height: 5rem;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:4rem;
+    right: 5rem;
+}
+
+.back:hover{
+    cursor:pointer;
+}
+
+.gallery-cont{
+    background-color: rgb(5, 105, 105);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gallery{
+    margin-left:53rem;
+}
+.parent-container{
+    margin-top:5rem;
+    display:flex;
+    margin-right:20rem;
+}
+
+.media-cont{
+    height: 15rem;
+    width: 15rem;
+    
+    border: 10px solid white;
+    margin: 2rem;
+    margin-top:1rem
+}
+.media-cont.active{
+    transform: scale(1.5);
+}
+.media-cont.inactive{
+    transform: none;
+}
+.media {
+    height: calc( 100% - 2rem - 2rem );
+}
+/* .media.active{
+    transform: scale(1.5);
+} */
+.media > *{
+    width:100% ;
+    height: 142%;
+    object-fit: fill;
+}
+.action-btn.active{
+    height:2rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+}
+.action-btn{
+    display: none;
+}
+
+.action-btn.active:hover{
+    cursor: pointer;
+    /* background-color: green; */
+    /* z-index: 10; */
+}
+/* 
+.download.active:hover{
+    background-color: black;
+} */
+
+/* .delete.active:hover{
+    background-color: red;
+} */
+.media-cont .active:hover {
+    color: red;
+}
